@@ -6,8 +6,8 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
-  margin-top: 20px;
+  margin-top: 40px; /* Adjust to prevent top cut-off */
 }
 
 /* Headers */
@@ -53,6 +53,12 @@ input {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
+  color: #333;
+}
+
+input::placeholder {
+  color: #999;
+  font-size: 14px;
 }
 
 /* Buttons */
