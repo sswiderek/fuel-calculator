@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuel Savings Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+    <h1>Fuel Savings Calculator</h1>
+
+    <label for="fleetSize">Fleet Size (Number of Ships):</label>
+    <input type="number" id="fleetSize" value="10">
+
+    <label for="voyageLength">Average Voyage Length (Days):</label>
+    <input type="number" id="voyageLength" value="30">
+
+    <label for="fuelConsumption">Fuel Consumption (MT/Day):</label>
+    <input type="number" id="fuelConsumption" value="50">
+
+    <label for="fuelPrice">Fuel Price (USD/MT):</label>
+    <input type="number" id="fuelPrice" value="750">
+
+    <label for="savingsPercent">Estimated Fuel Savings (%):</label>
+    <input type="number" id="savingsPercent" value="5">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h2>Results:</h2>
+    <p>Total Fuel Cost (Current): <span id="totalFuelCost">$0</span></p>
+    <p>Estimated Savings (USD): <span id="estimatedSavings">$0</span></p>
+    <p>Fuel Cost with Wayfinder: <span id="fuelCostWithWayfinder">$0</span></p>
+    <p>CO₂ Emissions Reduction (MT): <span id="co2Reduction">0 MT</span></p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
