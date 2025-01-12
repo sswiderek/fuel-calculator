@@ -1,57 +1,25 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.calculator {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 400px;
-}
-
-h1, h2 {
-  text-align: center;
-  color: #333;
-}
-
-label {
-  display: block;
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-p {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #333;
-}
+document.getElementById('calculator-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+  
+    // Retrieve input values
+    const fleetSize = parseFloat(document.getElementById('fleetSize').value);
+    const voyageLength = parseFloat(document.getElementById('voyageLength').value);
+    const fuelConsumption = parseFloat(document.getElementById('fuelConsumption').value);
+    const fuelPrice = parseFloat(document.getElementById('fuelPrice').value);
+    const fuelSavings = parseFloat(document.getElementById('fuelSavings').value);
+  
+    // Perform calculations
+    const totalFuelCost = fleetSize * voyageLength * fuelConsumption * fuelPrice;
+    const savingsAmount = totalFuelCost * (fuelSavings / 100);
+    const newFuelCost = totalFuelCost - savingsAmount;
+    const co2Reduction = savingsAmount / fuelPrice;
+  
+    // Display results
+    document.getElementById('results').innerHTML = `
+      Total Fuel Cost (Current): $${totalFuelCost.toLocaleString()}
+      <br>Estimated Savings: $${savingsAmount.toLocaleString()}
+      <br>Fuel Cost with Wayfinder: $${newFuelCost.toLocaleString()}
+      <br>CO₂ Emissions Reduction: ${co2Reduction.toFixed(2)} MT
+    `;
+  });
+  
