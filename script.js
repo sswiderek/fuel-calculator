@@ -1,49 +1,25 @@
-/* Apply Sofar's modern oceanic style */
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #f4f7fb;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
+document.getElementById('calculator-form').addEventListener('submit', function(e) {
+    e.preventDefault();
   
-  /* Calculator container */
-  .calculator {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-    margin-top: 20px;
-  }
+    // Retrieve input values
+    const fleetSize = parseFloat(document.getElementById('fleetSize').value);
+    const voyageLength = parseFloat(document.getElementById('voyageLength').value);
+    const fuelConsumption = parseFloat(document.getElementById('fuelConsumption').value);
+    const fuelPrice = parseFloat(document.getElementById('fuelPrice').value);
+    const fuelSavings = parseFloat(document.getElementById('fuelSavings').value);
   
-  /* Headers */
-  h1 {
-    text-align: center;
-    color: #0077be;
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
+    // Perform calculations
+    const totalFuelCost = fleetSize * voyageLength * fuelConsumption * fuelPrice;
+    const savingsAmount = totalFuelCost * (fuelSavings / 100);
+    const newFuelCost = totalFuelCost - savingsAmount;
+    const co2Reduction = savingsAmount / fuelPrice;
   
-  h2 {
-    text-align: center;
-    color: #333;
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-  /* Form labels */
-  label {
-    display: block;
-    margin: 15px 0 5px;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  /* In
+    // Display results
+    document.getElementById('results').innerHTML = `
+      Total Fuel Cost (Current): $${totalFuelCost.toLocaleString()}
+      <br>Estimated Savings: $${savingsAmount.toLocaleString()}
+      <br>Fuel Cost with Wayfinder: $${newFuelCost.toLocaleString()}
+      <br>CO₂ Emissions Reduction: ${co2Reduction.toFixed(2)} MT
+    `;
+  });
   
