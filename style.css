@@ -50,7 +50,7 @@ label {
   margin: 15px 0 5px;
   font-weight: 600;
   color: #333;
-  text-align: center; /* Centered labels */
+  text-align: center;
 }
 
 /* Input fields */
@@ -64,7 +64,6 @@ input {
   font-size: 16px;
   background-color: #f9f9fc;
   display: block;
-  text-align: center; /* Center text inside input fields */
 }
 
 /* Buttons */
@@ -102,27 +101,6 @@ button:hover {
 #results p {
   margin: 10px 0;
   font-weight: 600;
-}
-
-/* Download PDF button */
-#download-pdf {
-  width: 90%;
-  max-width: 400px;
-  padding: 12px;
-  background-color: #00bfa5;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 20px auto 0;
-  display: block;
-  transition: background-color 0.3s ease;
-}
-
-#download-pdf:hover {
-  background-color: #00997c;
 }
 
 /* Signature */
