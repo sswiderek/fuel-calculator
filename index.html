@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuel Savings Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofar Ocean Fuel Savings Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Calculator Section -->
-        <div class="calculator">
-            <img src="sofar-logo.png" alt="Sofar Ocean" class="logo">
-            <h1>Fuel Savings Calculator</h1>
-            <h2>Estimate your cost savings and CO₂ reduction</h2>
+  <div class="container">
+    <!-- Calculator Section -->
+    <div class="calculator">
+      <img src="sofar-logo.png" alt="Sofar Ocean" class="logo">
+      <h1>Fuel Savings Calculator</h1>
+      <h2>Estimate your cost savings and CO₂ reduction</h2>
 
-            <form id="calculator-form">
-                <label for="fleetSize">Fleet Size (Number of Ships):</label>
-                <input type="number" id="fleetSize" placeholder="10" required>
+      <form id="calculator-form">
+        <label for="fleetSize">Fleet Size (Number of Ships):</label>
+        <input type="number" id="fleetSize" placeholder="10" required>
+        
+        <label for="voyageLength">Average Voyage Length (Days):</label>
+        <input type="number" id="voyageLength" placeholder="30" required>
+        
+        <label for="fuelConsumption">Fuel Consumption (MT/Day):</label>
+        <input type="number" id="fuelConsumption" placeholder="50" required>
+        
+        <label for="fuelPrice">Fuel Price (USD/MT):</label>
+        <input type="number" id="fuelPrice" placeholder="750" required>
+        
+        <label for="fuelSavings">Estimated Fuel Savings (%):</label>
+        <input type="number" id="fuelSavings" placeholder="5" required>
+        
+        <button type="submit">Calculate Savings</button>
+      </form>
 
-                <label for="voyageLength">Average Voyage Length (Days):</label>
-                <input type="number" id="voyageLength" placeholder="30" required>
+      <div id="results"></div>
 
-                <label for="fuelConsumption">Fuel Consumption (MT/Day):</label>
-                <input type="number" id="fuelConsumption" placeholder="50" required>
-
-                <label for="fuelPrice">Fuel Price (USD/MT):</label>
-                <input type="number" id="fuelPrice" placeholder="750" required>
-
-                <label for="fuelSavings">Estimated Fuel Savings (%):</label>
-                <input type="number" id="fuelSavings" placeholder="5" required>
-
-                <button type="submit">Calculate Savings</button>
-            </form>
-
-            <div id="results"></div>
-            <p class="signature">Created by Shane Swiderek</p>
-        </div>
-
-        <!-- Information Section -->
-        <div class="info-section">
-            <h2>Sofar Ocean Fuel Savings Calculator – How It Works 💡</h2>
-            <p>This calculator helps shipping companies estimate potential fuel cost savings and CO₂ emissions reductions by using Sofar Ocean's Wayfinder platform for optimized voyage planning.</p>
-            <hr>
-            <h3>How to Use:</h3>
-            <ol>
-                <li><strong>Input Your Fleet Details 🚢</strong><br>Enter the number of ships, average voyage length, daily fuel consumption, and current fuel price.</li>
-                <li><strong>Adjust the Estimated Savings Percentage 🌱</strong><br>The calculator estimates fuel savings between 4% to 10%, based on real-world results from Wayfinder.</li>
-                <li><strong>See Your Savings 📊</strong><br>The calculator will automatically show:
-                    <ul>
-                        <li>Total Fuel Cost (Current) 💰</li>
-                        <li>Estimated Savings (USD) 💸</li>
-                        <li>Fuel Cost with Wayfinder 🔧</li>
-                        <li>CO₂ Emissions Reduction (MT) 🌎</li>
-                    </ul>
-                </li>
-            </ol>
-            <hr>
-            <h3>Assumptions Made in This Calculator ⚙️</h3>
-            <ol>
-                <li><strong>Fuel Consumption is Based on Daily Averages ⛽</strong><br>The calculator assumes a constant fuel consumption rate (MT/day) for the entire voyage duration.</li>
-                <li><strong>Fuel Price is Static 💰</strong><br>The fuel price entered is considered fixed for the voyage. Fluctuations in fuel prices are not accounted for.</li>
-                <li><strong>Estimated Savings Range 🌱</strong><br>The fuel savings percentage is estimated between 4% to 10%, based on typical results from Sofar Ocean's Wayfinder platform. Actual savings may vary depending on weather conditions, route complexity, and vessel type.</li>
-                <li><strong>CO₂ Emissions Reduction 🌎</strong><br>The calculator assumes that each metric ton of fuel burned produces 3.15 metric tons of CO₂, based on standard shipping industry benchmarks.</li>
-            </ol>
-        </div>
+      <p class="signature">Created by Shane Swiderek</p>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Information Section -->
+    <div class="info-box">
+      <h2>Sofar Ocean Fuel Savings Calculator – How It Works 💡</h2>
+      <p>This calculator helps shipping companies estimate potential fuel cost savings and CO₂ emissions reductions by using Sofar Ocean's Wayfinder platform for optimized voyage planning.</p>
+      <hr>
+      <h3>How to Use:</h3>
+      <ul>
+        <li><strong>1. Input Your Fleet Details 🚢</strong><br>Enter the number of ships, average voyage length, daily fuel consumption, and current fuel price.</li>
+        <li><strong>2. Adjust the Estimated Savings Percentage 🌱</strong><br>The calculator estimates fuel savings between 4% to 10%, based on real-world results from Wayfinder.</li>
+        <li><strong>3. See Your Savings 📊</strong><br>The calculator will automatically show:
+          <ul>
+            <li>Total Fuel Cost (Current) 💰</li>
+            <li>Estimated Savings (USD) 💸</li>
+            <li>Fuel Cost with Wayfinder 🔧</li>
+            <li>CO₂ Emissions Reduction (MT) 🌎</li>
+          </ul>
+        </li>
+      </ul>
+      <hr>
+      <h3>Assumptions Made in This Calculator ⚙️</h3>
+      <ul>
+        <li><strong>Fuel Consumption is Based on Daily Averages ⛽</strong><br>The calculator assumes a constant fuel consumption rate (MT/day) for the entire voyage duration.</li>
+        <li><strong>Fuel Price is Static 💰</strong><br>The fuel price entered is considered fixed for the voyage. Fluctuations in fuel prices are not accounted for.</li>
+        <li><strong>Estimated Savings Range 🌱</strong><br>The fuel savings percentage is estimated between 4% to 10%, based on typical results from Sofar Ocean's Wayfinder platform. Actual savings may vary depending on weather conditions, route complexity, and vessel type.</li>
+        <li><strong>CO₂ Emissions Reduction 🌎</strong><br>The calculator assumes that each metric ton of fuel burned produces 3.15 metric tons of CO₂, based on standard shipping industry benchmarks.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
