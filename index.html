@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="calculator">
-    <img src="sofar-logo.png" alt="Sofar Ocean" class="logo">
+    <img src="logo.png" alt="Sofar Ocean Logo" class="logo">
     <h1>Fuel Savings Calculator</h1>
     <h2>Estimate your cost savings and CO₂ reduction</h2>
     
@@ -33,11 +33,11 @@
     </form>
     
     <p id="results"></p>
-    <p class="subtext">* Based on your inputs, this calculator provides estimated savings and CO₂ reductions using optimized routes.</p>
-
+    <button id="download-pdf" style="display: none;">Download PDF Report</button>
     <p class="signature">Created by Shane Swiderek</p>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
