@@ -23,21 +23,3 @@ document.getElementById('calculator-form').addEventListener('submit', function (
     <p>🌱 <strong>CO₂ Emissions Reduction:</strong> ${co2Reduction.toFixed(2)} MT</p>
   `;
 });
-
-// Event listener for the "Download PDF" button
-document.getElementById('download-pdf').addEventListener('click', function () {
-  // Target the calculator container
-  const calculatorElement = document.querySelector('.calculator');
-
-  // Set PDF options
-  const options = {
-    margin: 1,
-    filename: 'Fuel_Savings_Report.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-  };
-
-  // Generate the PDF
-  html2pdf().from(calculatorElement).set(options).save();
-});
