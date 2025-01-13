@@ -19,18 +19,26 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
-  margin-top: 40px;
-  text-align: center;
+  margin-top: 20px;
+}
+
+/* Logo styling */
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 120px;
 }
 
 /* Headers */
 h1 {
+  text-align: center;
   color: #0077be;
   font-size: 28px;
   margin-bottom: 10px;
 }
 
 h2 {
+  text-align: center;
   color: #333;
   font-size: 20px;
   margin-bottom: 20px;
@@ -53,11 +61,8 @@ input {
   border-radius: 8px;
   font-size: 16px;
   background-color: #f9f9fc;
-}
-
-input::placeholder {
-  color: #bbb;
-  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* Buttons */
@@ -78,40 +83,26 @@ button:hover {
   background-color: #005a8c;
 }
 
-/* Results section styling */
+/* Results section */
 #results {
-  background-color: #f4f7fb;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
   font-size: 18px;
-  color: #333;
   margin-top: 20px;
+  padding: 10px;
+  background-color: #f4f7fb;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 #results p {
   margin: 10px 0;
-  line-height: 1.6;
+  font-weight: 600;
 }
 
-#results strong {
-  color: #0077be;
-}
-
-/* Signature styling */
+/* Signature */
 .signature {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #bbb;
   text-align: center;
-}
-
-.signature a {
-  color: #0077be;
-  text-decoration: none;
-}
-
-.signature a:hover {
-  text-decoration: underline;
+  color: #6b778d;
+  font-size: 12px;
+  margin-top: 20px;
 }
