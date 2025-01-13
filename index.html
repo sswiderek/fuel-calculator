@@ -6,50 +6,37 @@
   <title>Fuel Savings Calculator</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Load jsPDF library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 </head>
 <body>
-  <!-- Calculator Container -->
   <div class="calculator">
-    <!-- Sofar Logo -->
-    <img src="sofar-logo.png" alt="Sofar Ocean Logo" class="logo">
-
-    <!-- Heading -->
+    <img src="sofar-logo.png" alt="Sofar Ocean" class="logo">
     <h1>Fuel Savings Calculator</h1>
     <h2>Estimate your cost savings and CO₂ reduction</h2>
-
-    <!-- Calculator Form -->
+    
     <form id="calculator-form">
       <label for="fleetSize">Fleet Size (Number of Ships):</label>
       <input type="number" id="fleetSize" placeholder="10" required>
-
+      
       <label for="voyageLength">Average Voyage Length (Days):</label>
       <input type="number" id="voyageLength" placeholder="30" required>
-
+      
       <label for="fuelConsumption">Fuel Consumption (MT/Day):</label>
       <input type="number" id="fuelConsumption" placeholder="50" required>
-
+      
       <label for="fuelPrice">Fuel Price (USD/MT):</label>
       <input type="number" id="fuelPrice" placeholder="750" required>
-
+      
       <label for="fuelSavings">Estimated Fuel Savings (%):</label>
       <input type="number" id="fuelSavings" placeholder="5" required>
-
+      
       <button type="submit">Calculate Savings</button>
     </form>
-
-    <!-- Results Section -->
-    <div id="results"></div>
-
-    <!-- Download PDF Button -->
+    
+    <p id="results"></p>
     <button id="download-pdf">Download PDF Report</button>
-
-    <!-- Signature -->
     <p class="signature">Created by Shane Swiderek</p>
   </div>
-
-  <!-- JavaScript File -->
   <script src="script.js"></script>
 </body>
 </html>
