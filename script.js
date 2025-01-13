@@ -17,8 +17,8 @@ document.getElementById('calculator-form').addEventListener('submit', function(e
   // Display results with emojis and styling
   document.getElementById('results').innerHTML = `
     <p><strong>💰 Total Fuel Cost (Current):</strong> $${totalFuelCost.toLocaleString()}</p>
-    <p><strong>💡 Estimated Savings:</strong> $${savingsAmount.toLocaleString()}</p>
-    <p><strong>⚙️ Fuel Cost with Wayfinder:</strong> $${newFuelCost.toLocaleString()}</p>
+     <p><strong>⚙️ Fuel Cost with Wayfinder:</strong> $${newFuelCost.toLocaleString()}</p>
+     <p><strong>💡 Estimated Savings:</strong> $${savingsAmount.toLocaleString()}</p>
     <p><strong>🌱 CO₂ Emissions Reduction:</strong> ${co2Reduction.toFixed(2)} MT</p>
   `;
 });
