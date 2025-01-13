@@ -54,20 +54,21 @@ label {
 
 /* Input fields */
 input {
-  width: 100%;
+  width: 90%;  /* Adjusted width to center input fields */
+  max-width: 400px;  /* Ensures a consistent max size */
   padding: 12px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
   background-color: #f9f9fc;
-  padding-left: 16px;
-  padding-right: 16px;
+  display: block;  /* Ensures input fields are centered */
 }
 
 /* Buttons */
 button {
-  width: 100%;
+  width: 90%;
+  max-width: 400px;
   padding: 12px;
   background-color: #0077be;
   color: white;
@@ -76,6 +77,8 @@ button {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
+  margin: 0 auto;
+  display: block;
   transition: background-color 0.3s ease;
 }
 
