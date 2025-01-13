@@ -44,31 +44,33 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* Form group to align labels and inputs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
 /* Form labels */
 label {
-  display: block;
-  margin: 15px 0 5px;
   font-weight: 600;
   color: #333;
+  margin-bottom: 5px;
 }
 
 /* Input fields */
 input {
-  width: 90%;  /* Adjusted width to center input fields */
-  max-width: 400px;  /* Ensures a consistent max size */
   padding: 12px;
-  margin: 0 auto 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
   background-color: #f9f9fc;
-  display: block;  /* Ensures input fields are centered */
+  width: 100%;
 }
 
 /* Buttons */
 button {
-  width: 90%;
-  max-width: 400px;
+  width: 100%;
   padding: 12px;
   background-color: #0077be;
   color: white;
@@ -77,8 +79,6 @@ button {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  margin: 0 auto;
-  display: block;
   transition: background-color 0.3s ease;
 }
 
