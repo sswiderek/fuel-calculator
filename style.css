@@ -19,26 +19,18 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
-  margin-top: 20px;
-}
-
-/* Logo styling */
-.logo {
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 150px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 /* Headers */
 h1 {
-  text-align: center;
   color: #0077be;
   font-size: 28px;
   margin-bottom: 10px;
 }
 
 h2 {
-  text-align: center;
   color: #333;
   font-size: 20px;
   margin-bottom: 20px;
@@ -60,13 +52,12 @@ input {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
-  color: #333;
+  background-color: #f9f9fc;
 }
 
-/* Placeholder text */
 input::placeholder {
-  color: #c0c0c0; /* Lighter gray */
-  font-style: italic;
+  color: #bbb;
+  font-size: 14px;
 }
 
 /* Buttons */
@@ -87,28 +78,40 @@ button:hover {
   background-color: #005a8c;
 }
 
-/* Result text */
-p {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #333;
+/* Results section styling */
+#results {
+  background-color: #f4f7fb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
 }
 
-/* Subtext for additional context */
-.subtext {
-  color: #6b778d;
-  font-size: 14px;
-  text-align: center;
-  margin-top: 10px;
+#results p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+#results strong {
+  color: #0077be;
 }
 
 /* Signature styling */
 .signature {
-  font-size: 14px;
-  color: #6b778d;
-  text-align: center;
   margin-top: 20px;
-  font-style: italic;
+  font-size: 14px;
+  color: #bbb;
+  text-align: center;
+}
+
+.signature a {
+  color: #0077be;
+  text-decoration: none;
+}
+
+.signature a:hover {
+  text-decoration: underline;
 }
