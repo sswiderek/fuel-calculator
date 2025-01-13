@@ -33,8 +33,8 @@ document.getElementById('download-pdf').addEventListener('click', function() {
   const doc = new jsPDF();
 
   // Add Sofar Ocean logo
+  doc.addImage('logo.png', 'PNG', 10, 10, 50, 20);
   doc.setFontSize(20);
-  doc.addImage('https://sswiderek.github.io/fuel-calculator/logo.png', 'PNG', 10, 10, 50, 20);
   doc.text('Fuel Savings Report', 70, 25);
 
   // Add user input summary
@@ -47,7 +47,6 @@ document.getElementById('download-pdf').addEventListener('click', function() {
   doc.text(`Estimated Fuel Savings (%): ${document.getElementById('fuelSavings').value}`, 10, 100);
 
   // Add results
-  doc.setFontSize(12);
   doc.text('Results:', 10, 120);
   doc.text(`Total Fuel Cost (Current): $${totalFuelCost.toLocaleString()}`, 10, 130);
   doc.text(`Estimated Savings: $${savingsAmount.toLocaleString()}`, 10, 140);
