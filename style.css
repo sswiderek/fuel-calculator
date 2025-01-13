@@ -19,7 +19,14 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
-  margin-top: 40px; /* Adjust to prevent top cut-off */
+  margin-top: 20px;
+}
+
+/* Logo styling */
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
 }
 
 /* Headers */
@@ -56,9 +63,10 @@ input {
   color: #333;
 }
 
+/* Placeholder text */
 input::placeholder {
-  color: #999;
-  font-size: 14px;
+  color: #c0c0c0; /* Lighter gray */
+  font-style: italic;
 }
 
 /* Buttons */
@@ -72,12 +80,11 @@ button {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #005a8c;
-  transform: scale(1.05);
 }
 
 /* Result text */
@@ -95,4 +102,13 @@ p {
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
+}
+
+/* Signature styling */
+.signature {
+  font-size: 14px;
+  color: #6b778d;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
 }
