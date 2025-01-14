@@ -5,7 +5,7 @@ An interactive tool that demonstrates the potential fuel savings and carbon emis
 <ul> <li>Interactive input fields for fleet size, fuel consumption, and voyage duration.</li> <li>Real-time calculations of fuel savings and CO₂ reductions.</li> <li>Clean, professional user interface matching Sofar Ocean's brand style.</li> </ul>
 
 <h2>🚀 How to Use</h2>
-<ol> <li>Visit the live calculator at: <a href="https://sswiderek.github.io/sofar-calculator/">sswiderek.github.io/sofar-calculator</a></li> <li>Enter your fleet's details: <br /> &nbsp;&nbsp;&nbsp;• Fleet size<br /> &nbsp;&nbsp;&nbsp;• Average fuel consumption<br /> &nbsp;&nbsp;&nbsp;• Average voyage duration</li> <li>Click **"Calculate"** to view your potential fuel savings and CO₂ reduction.</li> <li>Adjust the inputs to explore various scenarios.</li> </ol>
+<ol> <li>Visit the live calculator at: <a href="https://sswiderek.github.io/fuel-calculator/">sswiderek.github.io/fuel-calculator</a></li> <li>Enter your fleet's details: <br /> &nbsp;&nbsp;&nbsp;• Fleet size<br /> &nbsp;&nbsp;&nbsp;• Average fuel consumption<br /> &nbsp;&nbsp;&nbsp;• Average voyage duration</li> <li>Click **"Calculate"** to view your potential fuel savings and CO₂ reduction.</li> <li>Adjust the inputs to explore various scenarios.</li> </ol>
 
 <h2>🎨 Design and Branding</h2>
 The calculator has been styled to align with Sofar Ocean's website branding, incorporating a modern, professional look that resonates with maritime and ocean technology themes.
